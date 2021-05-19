@@ -1,5 +1,8 @@
 c/connectDb.java
  c.connectDb
+b/MangaNewsBot.java
+ b.MangaNewsBot
+ b.MangaNewsBot$Config
 r/Main.java
  r.Main
  r.Main$PetControl

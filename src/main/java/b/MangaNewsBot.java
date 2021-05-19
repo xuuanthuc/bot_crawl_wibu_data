@@ -12,14 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class AnimeNewBot extends BaseBot {
+public class MangaNewsBot extends BaseBot {
     private interface Config extends BaseConfig {
-        String root = "https://tinanime.com/api/genres/tin-tuc-anime/news/?p=%s";
+        String root = "https://tinanime.com/api/genres/tin-tuc-manga/news/?p=%s";
     }
 
     List<NewDetail> data;
 
-    public AnimeNewBot() {
+    public MangaNewsBot() {
         data = new ArrayList<>();
     }
 
@@ -45,6 +45,7 @@ public class AnimeNewBot extends BaseBot {
                             updateDatabase();
                         }
                         Thread.sleep(1000);
+
                     }
 
                 }
@@ -73,7 +74,7 @@ public class AnimeNewBot extends BaseBot {
 
     void updateDatabase() {
         try {
-            FileUtils.write(new File("out/animenews.json"), gson.toJson(data), "utf-8");
+            FileUtils.write(new File("out/manganews.json"), gson.toJson(data), "utf-8");
         } catch (IOException e) {
             e.printStackTrace();
         }

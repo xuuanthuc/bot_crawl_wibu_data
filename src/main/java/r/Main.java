@@ -1,6 +1,7 @@
 package r;
 
 import b.AnimeNewBot;
+import b.MangaNewsBot;
 import com.mysql.jdbc.Connection;
 
 import java.sql.DriverManager;
@@ -66,6 +67,7 @@ public class Main {
         Timer timer = new Timer();
 
         AnimeNewBot animeNewBot = new AnimeNewBot();
+        MangaNewsBot mangaNewsBot = new MangaNewsBot();
 
         PetControl() {
             AppData.getInstance();
@@ -78,6 +80,7 @@ public class Main {
                 public void run() {
                     System.out.println("Check all bot");
                     if (!animeNewBot.isRunning()) animeNewBot.run();
+                    if (!mangaNewsBot.isRunning()) mangaNewsBot.run();
                 }
             }, delay, period);
         }
