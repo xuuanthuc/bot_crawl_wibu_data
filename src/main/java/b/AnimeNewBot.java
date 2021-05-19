@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class AnimeNewBot extends BaseBot {
     private interface Config extends BaseConfig {
@@ -36,13 +37,15 @@ public class AnimeNewBot extends BaseBot {
                 NewInfo news = gson.fromJson(json, NewInfo.class);
                 if (news != null) {
 //                    for (int i = 0; i < news.lastPage; i++) {
-                    for (int i = 0; i < 2; i++) {
+                    for (int i = 0; i < 50; i++) {
+                        System.out.println(i);
                         List<NewDetail> temp = getNewsData(i);
                         if (temp != null) {
                             data.addAll(temp);
+                            updateDatabase();
                         }
                     }
-                    updateDatabase();
+
                 }
                 complete();
             } catch (Exception e) {
@@ -69,7 +72,7 @@ public class AnimeNewBot extends BaseBot {
 
     void updateDatabase() {
         try {
-            FileUtils.write(new File("out/news.txt"), gson.toJson(data), "utf-8");
+            FileUtils.write(new File("out/animenews.txt"), gson.toJson(data), "utf-8");
         } catch (IOException e) {
             e.printStackTrace();
         }

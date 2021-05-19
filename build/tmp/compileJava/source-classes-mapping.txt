@@ -1,0 +1,22 @@
+c/connectDb.java
+ c.connectDb
+r/Main.java
+ r.Main
+ r.Main$PetControl
+ r.Main$PetControl$1
+b/BaseBot.java
+ b.BaseBot
+ b.BaseBot$BaseConfig
+b/AnimeNewBot.java
+ b.AnimeNewBot
+ b.AnimeNewBot$Config
+m/NewGenre.java
+ m.NewGenre
+m/BaseModel.java
+ m.BaseModel
+m/NewInfo.java
+ m.NewInfo
+m/NewDetail.java
+ m.NewDetail
+r/AppData.java
+ r.AppData
