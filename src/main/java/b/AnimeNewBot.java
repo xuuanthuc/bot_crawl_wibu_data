@@ -72,7 +72,7 @@ public class AnimeNewBot extends BaseBot {
 
     void updateDatabase() {
         try {
-            FileUtils.write(new File("out/animenews.txt"), gson.toJson(data), "utf-8");
+            FileUtils.write(new File("out/animenews.json"), gson.toJson(data), "utf-8");
         } catch (IOException e) {
             e.printStackTrace();
         }
