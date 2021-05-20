@@ -14,7 +14,7 @@ package b;
 
 public class NominationsBot extends BaseBot {
     private interface Config extends BaseConfig {
-        String root = "https://tinanime.com/api/genres/nhan-vat/news/?p=%s";
+        String root = "https://tinanime.com/api/genres/de-cu-anime/news/?p=%s";
     }
 
     List<NewDetail> data;
