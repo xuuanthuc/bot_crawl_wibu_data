@@ -44,7 +44,7 @@ public class MangaNewsBot extends BaseBot {
                             data.addAll(temp);
                             updateDatabase();
                         }
-                        Thread.sleep(1000);
+                        Thread.sleep(3000);
 
                     }
 

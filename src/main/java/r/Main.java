@@ -1,7 +1,6 @@
 package r;
 
-import b.AnimeNewBot;
-import b.MangaNewsBot;
+import b.*;
 import com.mysql.jdbc.Connection;
 
 import java.sql.DriverManager;
@@ -68,6 +67,9 @@ public class Main {
 
         AnimeNewBot animeNewBot = new AnimeNewBot();
         MangaNewsBot mangaNewsBot = new MangaNewsBot();
+        CosplayBot cosplayBot = new CosplayBot();
+        FigureBot figureBot = new FigureBot();
+        NominationsBot nominationsBot = new NominationsBot();
 
         PetControl() {
             AppData.getInstance();
@@ -81,6 +83,9 @@ public class Main {
                     System.out.println("Check all bot");
                     if (!animeNewBot.isRunning()) animeNewBot.run();
                     if (!mangaNewsBot.isRunning()) mangaNewsBot.run();
+                    if (!cosplayBot.isRunning()) cosplayBot.run();
+                    if (!figureBot.isRunning()) figureBot.run();
+                    if (!nominationsBot.isRunning()) nominationsBot.run();
                 }
             }, delay, period);
         }

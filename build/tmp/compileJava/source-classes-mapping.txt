@@ -1,25 +1,34 @@
 c/connectDb.java
  c.connectDb
-b/MangaNewsBot.java
- b.MangaNewsBot
- b.MangaNewsBot$Config
 r/Main.java
  r.Main
  r.Main$PetControl
  r.Main$PetControl$1
+m/NewGenre.java
+ m.NewGenre
+m/BaseModel.java
+ m.BaseModel
+r/AppData.java
+ r.AppData
+b/NominationsBot.java
+ b.NominationsBot
+ b.NominationsBot$Config
+b/MangaNewsBot.java
+ b.MangaNewsBot
+ b.MangaNewsBot$Config
 b/BaseBot.java
  b.BaseBot
  b.BaseBot$BaseConfig
 b/AnimeNewBot.java
  b.AnimeNewBot
  b.AnimeNewBot$Config
-m/NewGenre.java
- m.NewGenre
-m/BaseModel.java
- m.BaseModel
+b/CosplayBot.java
+ b.CosplayBot
+ b.CosplayBot$Config
+b/FigureBot.java
+ b.FigureBot
+ b.FigureBot$Config
 m/NewInfo.java
  m.NewInfo
 m/NewDetail.java
  m.NewDetail
-r/AppData.java
- r.AppData
