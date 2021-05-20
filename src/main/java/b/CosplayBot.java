@@ -37,7 +37,7 @@ public class CosplayBot extends BaseBot {
                 NewInfo news = gson.fromJson(json, NewInfo.class);
                 if (news != null) {
 //                    for (int i = 0; i < news.lastPage; i++) {
-                    for (int i = 0; i < 50; i++) {
+                    for (int i = 1; i < 50; i++) {
                         System.out.println(i);
                         List<NewDetail> temp = getNewsData(i);
                         if (temp != null) {
