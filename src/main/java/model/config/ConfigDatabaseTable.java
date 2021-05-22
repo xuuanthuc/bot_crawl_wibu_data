@@ -12,3 +12,4 @@ public class ConfigDatabaseTable {
     @Expose
     public String wallpaper;
 }
+

@@ -14,7 +14,6 @@ public class BaseBot {
     protected long lastRun;
     protected long restTime;
     protected AppStorage appStorage;
-    protected AppSql appSql;
     protected Gson gson;
     protected OkHttpClient client;
     protected ExecutorService executor;
@@ -24,7 +23,6 @@ public class BaseBot {
         this.restTime = restTime;
         this.lastRun = 0;
         this.appStorage = AppStorage.getInstance();
-        this.appSql = new AppSql();
         this.gson = new Gson();
         this.client = new OkHttpClient();
         this.executor = Executors.newFixedThreadPool(Math.max(maxThread, AppData.threadDefault));
@@ -36,6 +34,7 @@ public class BaseBot {
 
     public void complete() {
         isRunning = false;
+        lastRun = System.currentTimeMillis();
     }
 
     public boolean isRunning() {
