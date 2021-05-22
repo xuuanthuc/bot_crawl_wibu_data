@@ -14,7 +14,7 @@ import java.util.List;
 public class NewBot extends BaseBot {
     private List<NewDetail> data;
     private NewBotDB database;
-    private int current, total;
+    private Integer current, total;
 
     public NewBot(int maxThread, long restTime) {
         super(maxThread, restTime);
@@ -33,7 +33,9 @@ public class NewBot extends BaseBot {
         for (ConfigQuery query : queries) {
             executor.execute(() -> {
                 getNews(query);
-                current++;
+                synchronized (current) {
+                    current++;
+                }
                 if (current == total) {
                     updateDatabase();
                     complete();
