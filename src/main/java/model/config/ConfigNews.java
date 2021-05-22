@@ -22,4 +22,10 @@ public class ConfigNews {
     @SerializedName("restTime")
     @Expose
     public Long restTime;
+    @SerializedName("sleepMin")
+    @Expose
+    public Integer sleepMin;
+    @SerializedName("sleepMax")
+    @Expose
+    public Integer sleepMax;
 }

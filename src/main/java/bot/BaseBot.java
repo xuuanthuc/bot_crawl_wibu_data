@@ -6,6 +6,7 @@ import util.AppData;
 import util.AppSql;
 import util.AppStorage;
 
+import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -13,6 +14,7 @@ public class BaseBot {
     protected boolean isRunning;
     protected long lastRun;
     protected long restTime;
+    protected Random random;
     protected AppStorage appStorage;
     protected Gson gson;
     protected OkHttpClient client;
@@ -22,6 +24,7 @@ public class BaseBot {
         this.isRunning = false;
         this.restTime = restTime;
         this.lastRun = 0;
+        this.random = new Random();
         this.appStorage = AppStorage.getInstance();
         this.gson = new Gson();
         this.client = new OkHttpClient();

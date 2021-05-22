@@ -50,8 +50,8 @@ public class NewBot extends BaseBot {
             Response response = client.newCall(request).execute();
             String json = response.body().string();
             NewInfo news = gson.fromJson(json, NewInfo.class);
-            int max = appStorage.config.news.maxPage;
-            for (int newIndex = 1; newIndex < Math.min(news.lastPage, max); newIndex++) {
+            int maxPage = appStorage.config.news.maxPage;
+            for (int newIndex = 1; newIndex < Math.min(news.lastPage, maxPage); newIndex++) {
                 List<NewDetail> newDetails = getNewsData(query, newIndex);
                 if (newDetails != null) {
                     for (int newDetailIndex = 0; newDetailIndex < newDetails.size(); newDetailIndex++) {
@@ -61,7 +61,10 @@ public class NewBot extends BaseBot {
                     }
                     data.addAll(newDetails);
                 }
-                Thread.sleep(AppData.threadSleepDefault);
+                int max = appStorage.config.news.sleepMax;
+                int min = appStorage.config.news.sleepMin;
+                int sleepTime = random.nextInt(max - min + 1) + min;
+                Thread.sleep(sleepTime);
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -3,7 +3,6 @@ package util;
 public interface AppData {
     String charset = "utf-8";
     int threadDefault = 5;
-    int threadSleepDefault = 5000;
 
     interface Config {
         interface Input {

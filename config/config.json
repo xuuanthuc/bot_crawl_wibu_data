@@ -46,9 +46,11 @@
         "name": "de-cu-anime"
       }
     ],
-    "maxPage": 10,
+    "maxPage": 5,
     "maxThread": 5,
-    "restTime": 15
+    "restTime": 15,
+    "sleepMin": 2000,
+    "sleepMax": 5000
   },
   "app": {
     "timeCheck": 1
