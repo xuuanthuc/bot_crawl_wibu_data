@@ -22,6 +22,9 @@ public class ConfigNews {
     @SerializedName("restTime")
     @Expose
     public Long restTime;
+    @SerializedName("retry")
+    @Expose
+    public Long retry;
     @SerializedName("sleepMin")
     @Expose
     public Integer sleepMin;

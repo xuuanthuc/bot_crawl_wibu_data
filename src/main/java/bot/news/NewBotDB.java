@@ -24,7 +24,7 @@ public class NewBotDB extends BaseBotDB {
                     String column = columns[i];
                     columnName.append(String.format("%s, ", column));
                     markValue.append("?, ");
-                    if (i != 0) {
+                    if (i != 0 && i != 1) {
                         update.append(String.format("%s = VALUES(%s), ", column, column));
                     }
                 }
@@ -57,6 +57,7 @@ public class NewBotDB extends BaseBotDB {
                     statement.addBatch();
                 }
                 int[] updateCounts = statement.executeBatch();
+                System.out.println(gson.toJson(updateCounts));
                 connection.commit();
                 connection.setAutoCommit(true);
             } catch (Exception e) {
