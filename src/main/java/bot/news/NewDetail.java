@@ -7,6 +7,9 @@ public class NewDetail {
     @SerializedName("id")
     @Expose
     public Integer id;
+    @SerializedName("type")
+    @Expose
+    public Integer type;
     @SerializedName("title")
     @Expose
     public String title;

@@ -2,8 +2,6 @@ package bot.news;
 
 import bot.BaseBot;
 import model.config.ConfigQuery;
-import model.news.NewDetail;
-import model.news.NewInfo;
 import okhttp3.Request;
 import okhttp3.Response;
 import org.apache.commons.io.FileUtils;
