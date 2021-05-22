@@ -28,7 +28,7 @@ public class AppStorage {
         try {
             String dir = jarPath;
 
-            File file = new File(dir + AppData.Config.configFile);
+            File file = new File(dir + AppData.Config.Input.config);
             String string = FileUtils.readFileToString(file, AppData.charset);
             config = gson.fromJson(string, Config.class);
             config.app.timeCheck = config.app.timeCheck * 60 * 1000;

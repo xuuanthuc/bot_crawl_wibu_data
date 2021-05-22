@@ -9,10 +9,10 @@ import com.google.gson.annotations.SerializedName;
 public class Config {
     @SerializedName("domains")
     @Expose
-    public List<ConfigDomain> domains = null;
+    public ConfigDomain domain = null;
     @SerializedName("database")
     @Expose
-    public List<ConfigDatabase> database = null;
+    public ConfigDatabase database = null;
     @SerializedName("news")
     @Expose
     public ConfigNews news;
