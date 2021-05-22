@@ -33,6 +33,7 @@ public class NewBot extends BaseBot {
             executor.execute(() -> {
                 getNews(query);
                 current++;
+                System.out.println(current);
                 if (current == total) {
                     updateDatabase();
                     complete();
@@ -86,7 +87,9 @@ public class NewBot extends BaseBot {
 
     void updateDatabase() {
         try {
-            FileUtils.write(new File(AppData.Config.outNewsFile), gson.toJson(data), AppData.charset);
+            FileUtils.write(new File(appStorage.jarPath + AppData.Config.outNewsFile), gson.toJson(data), AppData.charset);
+//            System.out.println(gson.toJson(data));
+            System.out.println(data.size());
         } catch (IOException e) {
             e.printStackTrace();
         }

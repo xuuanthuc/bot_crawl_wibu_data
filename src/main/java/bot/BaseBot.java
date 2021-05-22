@@ -33,6 +33,7 @@ public class BaseBot {
 
     public void complete() {
         isRunning = false;
+        lastRun = System.currentTimeMillis();
     }
 
     public boolean isRunning() {

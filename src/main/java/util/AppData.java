@@ -10,6 +10,6 @@ public interface AppData {
         String configFile = configFolder + "/config.json";
 
         String outFolder = "/out";
-        String outNewsFile = configFolder + "/news.json";
+        String outNewsFile = outFolder + "/news.json";
     }
 }
