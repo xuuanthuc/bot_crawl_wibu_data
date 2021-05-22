@@ -1,34 +1,39 @@
-c/connectDb.java
- c.connectDb
-r/Main.java
- r.Main
- r.Main$PetControl
- r.Main$PetControl$1
-m/NewGenre.java
- m.NewGenre
-m/BaseModel.java
- m.BaseModel
-r/AppData.java
- r.AppData
-b/NominationsBot.java
- b.NominationsBot
- b.NominationsBot$Config
-b/MangaNewsBot.java
- b.MangaNewsBot
- b.MangaNewsBot$Config
-b/BaseBot.java
- b.BaseBot
- b.BaseBot$BaseConfig
-b/AnimeNewBot.java
- b.AnimeNewBot
- b.AnimeNewBot$Config
-b/CosplayBot.java
- b.CosplayBot
- b.CosplayBot$Config
-b/FigureBot.java
- b.FigureBot
- b.FigureBot$Config
-m/NewInfo.java
- m.NewInfo
-m/NewDetail.java
- m.NewDetail
+model/config/ConfigApp.java
+ model.config.ConfigApp
+model/config/Config.java
+ model.config.Config
+model/config/ConfigDatabase.java
+ model.config.ConfigDatabase
+bot/BaseBot.java
+ bot.BaseBot
+bot/news/NewBot.java
+ bot.news.NewBot
+control/connectDb.java
+ control.connectDb
+bot/news/NewInfo.java
+ bot.news.NewInfo
+util/AppData.java
+ util.AppData
+ util.AppData$Config
+model/config/ConfigNews.java
+ model.config.ConfigNews
+model/common/BaseModel.java
+ model.common.BaseModel
+bot/wallpaper/WallpaperBot.java
+ bot.wallpaper.WallpaperBot
+model/config/ConfigDomain.java
+ model.config.ConfigDomain
+bot/news/NewGenre.java
+ bot.news.NewGenre
+bot/news/NewDetail.java
+ bot.news.NewDetail
+model/config/ConfigQuery.java
+ model.config.ConfigQuery
+util/AppStorage.java
+ util.AppStorage
+model/config/ConfigWallpaper.java
+ model.config.ConfigWallpaper
+run/Main.java
+ run.Main
+ run.Main$Control
+ run.Main$Control$1
