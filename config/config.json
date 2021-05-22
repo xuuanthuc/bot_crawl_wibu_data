@@ -1,18 +1,19 @@
 {
-  "domains": [
-    {
-      "url": "",
-      "port": 8888
+  "domains": {
+    "url": "",
+    "port": 8888
+  },
+  "database": {
+    "domain": "127.0.0.1",
+    "port": 3306,
+    "schema": "wibu",
+    "user": "root",
+    "pass": "abc@123**",
+    "table": {
+      "news": "news",
+      "wallpaper": "wallpaper"
     }
-  ],
-  "database": [
-    {
-      "url": "",
-      "port": 8888,
-      "user": "",
-      "pass": ""
-    }
-  ],
+  },
   "wallpaper": {
     "query": [
       ""
@@ -45,7 +46,7 @@
         "name": "de-cu-anime"
       }
     ],
-    "maxPage": 50,
+    "maxPage": 10,
     "maxThread": 5,
     "restTime": 15
   },

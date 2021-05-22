@@ -3,6 +3,9 @@ package bot.news;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class NewDetail {
     @SerializedName("id")
     @Expose

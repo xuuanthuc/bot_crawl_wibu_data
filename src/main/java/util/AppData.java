@@ -6,10 +6,20 @@ public interface AppData {
     int threadSleepDefault = 1000;
 
     interface Config {
-        String configFolder = "/config";
-        String configFile = configFolder + "/config.json";
+        interface Input {
+            String folder = "/config";
+            String config = folder + "/config.json";
+        }
+        interface Output {
+            String folder = "/out";
+            String news = folder + "/news.json";
+        }
+    }
 
-        String outFolder = "/out";
-        String outNewsFile = configFolder + "/news.json";
+    interface Database {
+        interface MySQL {
+            String driver = "com.mysql.cj.jdbc.Driver";
+            String url = "jdbc:mysql://%s/%s?user=%s&password=%s";
+        }
     }
 }

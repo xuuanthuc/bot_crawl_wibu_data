@@ -3,6 +3,7 @@ package bot;
 import com.google.gson.Gson;
 import okhttp3.OkHttpClient;
 import util.AppData;
+import util.AppSql;
 import util.AppStorage;
 
 import java.util.concurrent.ExecutorService;
@@ -13,6 +14,7 @@ public class BaseBot {
     protected long lastRun;
     protected long restTime;
     protected AppStorage appStorage;
+    protected AppSql appSql;
     protected Gson gson;
     protected OkHttpClient client;
     protected ExecutorService executor;
@@ -22,6 +24,7 @@ public class BaseBot {
         this.restTime = restTime;
         this.lastRun = 0;
         this.appStorage = AppStorage.getInstance();
+        this.appSql = new AppSql();
         this.gson = new Gson();
         this.client = new OkHttpClient();
         this.executor = Executors.newFixedThreadPool(Math.max(maxThread, AppData.threadDefault));
