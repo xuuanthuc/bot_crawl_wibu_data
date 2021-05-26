@@ -8,19 +8,42 @@
     "port": 3306,
     "schema": "wibu",
     "user": "root",
-    "pass": "abc@123**",
+    "pass": "123456789",
     "table": {
       "news": "news",
       "wallpaper": "wallpaper"
     }
   },
   "wallpaper": {
+    "url": "https://www.zedge.net/api-zedge-web/browse/search?query=%s&cursor=1%3AhJmiqg%3A%s&section=search-wallpapers-anime&contentType=wallpapers",
     "query": [
-      ""
+      {
+        "id": 1,
+        "name": "anime"
+      },
+      {
+        "id": 2,
+        "name": "anime-girls"
+      },
+      {
+        "id": 3,
+        "name": "anime-aesthetic"
+      },
+      {
+        "id": 4,
+        "name": "anime-boys"
+      },
+      {
+        "id": 5,
+        "name": "anime-love"
+      }
     ],
-    "maxPage": 50,
+    "maxPage": 5,
     "maxThread": 5,
-    "restTime": 15
+    "restTime": 15,
+    "retry": 15,
+    "sleepMin": 4000,
+    "sleepMax": 8000
   },
   "news": {
     "url": "https://tinanime.com/api/genres/%s/news/?p=%s",
@@ -46,12 +69,12 @@
         "name": "de-cu-anime"
       }
     ],
-    "maxPage": 50,
+    "maxPage": 5,
     "maxThread": 5,
     "restTime": 15,
     "retry": 15,
-    "sleepMin": 2000,
-    "sleepMax": 5000
+    "sleepMin": 4000,
+    "sleepMax": 8000
   },
   "app": {
     "timeCheck": 1

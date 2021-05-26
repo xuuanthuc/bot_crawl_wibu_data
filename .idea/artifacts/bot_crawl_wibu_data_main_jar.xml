@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact name="bot_crawl_wibu_data.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bot_crawl_wibu_data_main_jar</output-path>
+    <root id="root">
+      <element id="archive" name="bot_crawl_wibu_data.main.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="bot_crawl_wibu_data.main" />
+      </element>
+      <element id="library" level="project" name="Gradle: org.jsoup:jsoup:1.13.1" />
+      <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:8.0.25" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" />
+      <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.11.4" />
+      <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.3.1" />
+      <element id="library" level="project" name="Gradle: org.jetbrains:annotations:13.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.okio:okio:2.8.0" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.10" />
+      <element id="library" level="project" name="Gradle: com.squareup.okhttp3:okhttp:4.9.0" />
+      <element id="library" level="project" name="Gradle: commons-io:commons-io:2.8.0" />
+    </root>
+  </artifact>
+</component>

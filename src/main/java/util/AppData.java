@@ -13,6 +13,7 @@ public interface AppData {
         interface Output {
             String folder = "/out";
             String news = folder + "/news.json";
+            String wallpaper = folder + "/wallpaper.json";
         }
     }
 

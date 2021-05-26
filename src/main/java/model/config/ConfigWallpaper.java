@@ -6,9 +6,12 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class ConfigWallpaper {
+    @SerializedName("url")
+    @Expose
+    public String url = null;
     @SerializedName("query")
     @Expose
-    public List<String> query = null;
+    public List<ConfigQuery> query = null;
     @SerializedName("maxPage")
     @Expose
     public Integer maxPage;
@@ -18,4 +21,13 @@ public class ConfigWallpaper {
     @SerializedName("restTime")
     @Expose
     public Long restTime;
+    @SerializedName("retry")
+    @Expose
+    public Long retry;
+    @SerializedName("sleepMin")
+    @Expose
+    public Integer sleepMin;
+    @SerializedName("sleepMax")
+    @Expose
+    public Integer sleepMax;
 }

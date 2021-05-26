@@ -1,0 +1,59 @@
+{
+  "domains": {
+    "url": "",
+    "port": 8888
+  },
+  "database": {
+    "domain": "127.0.0.1",
+    "port": 3306,
+    "schema": "wibu",
+    "user": "root",
+    "pass": "123456789",
+    "table": {
+      "news": "news",
+      "wallpaper": "wallpaper"
+    }
+  },
+  "wallpaper": {
+    "query": [
+      ""
+    ],
+    "maxPage": 50,
+    "maxThread": 5,
+    "restTime": 15
+  },
+  "news": {
+    "url": "https://tinanime.com/api/genres/%s/news/?p=%s",
+    "query": [
+      {
+        "id": 1,
+        "name": "tin-tuc-manga"
+      },
+      {
+        "id": 2,
+        "name": "tin-tuc-anime"
+      },
+      {
+        "id": 3,
+        "name": "cosplay"
+      },
+      {
+        "id": 4,
+        "name": "nhan-vat"
+      },
+      {
+        "id": 5,
+        "name": "de-cu-anime"
+      }
+    ],
+    "maxPage": 5,
+    "maxThread": 5,
+    "restTime": 15,
+    "retry": 15,
+    "sleepMin": 4000,
+    "sleepMax": 8000
+  },
+  "app": {
+    "timeCheck": 1
+  }
+}
