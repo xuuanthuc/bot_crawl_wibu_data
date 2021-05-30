@@ -53,7 +53,6 @@ public class WallpaperBot extends BaseBot {
             Response response = client.newCall(request).execute();
             String json = response.body().string();
             WallpaperInfo wallpaperInfo = gson.fromJson(json, WallpaperInfo.class);
-            int maxPage = appStorage.config.news.maxPage;
             int newIndex = 0;
             int retry = 0;
             while (newIndex <= Math.min(950, 1100)) {

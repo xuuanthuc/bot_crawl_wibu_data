@@ -12,10 +12,8 @@ bot/news/NewDetail.java
  bot.news.NewDetail
 util/AppStorage.java
  util.AppStorage
-run/Main.java
- run.Main
- run.Main$Control
- run.Main$Control$1
+bot/news/NewBot.java
+ bot.news.NewBot
 bot/wallpaper/WallpaperItems.java
  bot.wallpaper.WallpaperItems
 model/config/ConfigApp.java
@@ -26,8 +24,8 @@ util/AppUtil.java
  util.AppUtil
 bot/BaseBotDB.java
  bot.BaseBotDB
-bot/wallpaper/WallpaperBot.java
- bot.wallpaper.WallpaperBot
+bot/news/NewBotDB.java
+ bot.news.NewBotDB
 bot/wallpaper/WallpaperInfo.java
  bot.wallpaper.WallpaperInfo
 bot/news/NewInfo.java
@@ -54,7 +52,9 @@ model/config/ConfigQuery.java
  model.config.ConfigQuery
 bot/wallpaper/WallpaperBotDB.java
  bot.wallpaper.WallpaperBotDB
-bot/news/NewBotDB.java
- bot.news.NewBotDB
-bot/news/NewBot.java
- bot.news.NewBot
+bot/wallpaper/WallpaperBot.java
+ bot.wallpaper.WallpaperBot
+run/Main.java
+ run.Main
+ run.Main$Control
+ run.Main$Control$1
