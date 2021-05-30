@@ -51,10 +51,10 @@ public class WallpaperBotDB extends BaseBotDB {
                     statement.setString(10, item.shareUrl);
                     statement.setString(11, item.thumbUrl);
                     statement.setString(12, item.downloadReference);
-                    statement.setLong(12, item.size);
-                    statement.setLong(12, item.licenseType);
-                    statement.setString(12, item.previewUrl);
-                    statement.setString(13, gson.toJson(item.wallpaperSize));
+                    statement.setLong(13, item.size);
+                    statement.setLong(14, item.licenseType);
+                    statement.setString(15, item.previewUrl);
+                    statement.setString(16, gson.toJson(item.wallpaperSize));
                     statement.addBatch();
                 }
                 int[] updateCounts = statement.executeBatch();

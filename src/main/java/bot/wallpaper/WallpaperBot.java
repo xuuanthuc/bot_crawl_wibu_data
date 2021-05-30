@@ -48,24 +48,24 @@ public class WallpaperBot extends BaseBot {
 
     private void getWallpaper(ConfigQuery query) {
         try {
-            String url = String.format(appStorage.config.wallpaper.url, query.name, 1);
+            String url = String.format(appStorage.config.wallpaper.url, query.name,0);
             Request request = new Request.Builder().url(url).build();
             Response response = client.newCall(request).execute();
             String json = response.body().string();
-            WallpaperInfo news = gson.fromJson(json, WallpaperInfo.class);
-            int maxPage = appStorage.config.wallpaper.maxPage;
-            int newIndex = 1;
+            WallpaperInfo wallpaperInfo = gson.fromJson(json, WallpaperInfo.class);
+            int maxPage = appStorage.config.news.maxPage;
+            int newIndex = 0;
             int retry = 0;
-            while (newIndex <= Math.min(900, maxPage)) {
+            while (newIndex <= Math.min(950, 1100)) {
                 List<WallpaperItems> newDetails = getWallpaperData(query, newIndex, retry);
                 if (newDetails != null) {
-                    for (int newDetailIndex = 0; newDetailIndex < newDetails.size(); newDetailIndex++) {
+                    for (int newDetailIndex = 0; newDetailIndex < newDetails.size();newDetailIndex++ ) {
                         WallpaperItems buffer = newDetails.get(newDetailIndex);
                         buffer.type = query.id;
                         newDetails.set(newDetailIndex, buffer);
                     }
                     data.addAll(newDetails);
-                    newIndex++;
+                    newIndex = newIndex + 48;
                     retry = 0;
                 } else {
                     retry++;
@@ -73,8 +73,8 @@ public class WallpaperBot extends BaseBot {
                 if (retry == appStorage.config.wallpaper.retry) {
                     newIndex++;
                 }
-                int max = appStorage.config.news.sleepMax;
-                int min = appStorage.config.news.sleepMin;
+                int max = appStorage.config.wallpaper.sleepMax;
+                int min = appStorage.config.wallpaper.sleepMin;
                 int sleepTime = random.nextInt(max - min + 1) + min;
                 Thread.sleep(sleepTime);
             }
@@ -87,14 +87,14 @@ public class WallpaperBot extends BaseBot {
         String url = "";
         String json = "";
         try {
-            url = String.format(appStorage.config.news.url, query.name, i);
+            url = String.format(appStorage.config.wallpaper.url, query.name, i);
             if (retry == 0) System.out.println(url);
             Request request = new Request.Builder().url(url).build();
             Response response = client.newCall(request).execute();
             json = response.body().string();
-            WallpaperInfo news = gson.fromJson(json, WallpaperInfo.class);
-            if (news != null && news.items != null) {
-                return news.items;
+            WallpaperInfo wallpaperInfo = gson.fromJson(json, WallpaperInfo.class);
+            if (wallpaperInfo != null && wallpaperInfo.items != null) {
+                return wallpaperInfo.items;
             }
         } catch (Exception e) {
             System.out.println(String.format("[%s_%s : %s] - error[%s]", query.name, i, retry, e.getMessage()));

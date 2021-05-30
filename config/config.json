@@ -15,7 +15,7 @@
     }
   },
   "wallpaper": {
-    "url": "https://www.zedge.net/api-zedge-web/browse/search?query=%s&cursor=1%3AhJmiqg%3A%s&section=search-wallpapers-anime&contentType=wallpapers",
+    "url": "https://www.zedge.net/api-zedge-web/browse/search?query=%s&cursor=1::%s&section=search-wallpapers-anime&contentType=wallpapers",
     "query": [
       {
         "id": 1,
@@ -42,8 +42,8 @@
     "maxThread": 5,
     "restTime": 15,
     "retry": 15,
-    "sleepMin": 4000,
-    "sleepMax": 8000
+    "sleepMin": 10,
+    "sleepMax": 100
   },
   "news": {
     "url": "https://tinanime.com/api/genres/%s/news/?p=%s",
