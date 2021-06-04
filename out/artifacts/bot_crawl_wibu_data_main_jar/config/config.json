@@ -15,12 +15,35 @@
     }
   },
   "wallpaper": {
+    "url": "https://www.zedge.net/api-zedge-web/browse/search?query=%s&cursor=1::%s&section=search-wallpapers-anime&contentType=wallpapers",
     "query": [
-      ""
+      {
+        "id": 1,
+        "name": "anime"
+      },
+      {
+        "id": 2,
+        "name": "anime-girls"
+      },
+      {
+        "id": 3,
+        "name": "anime-aesthetic"
+      },
+      {
+        "id": 4,
+        "name": "anime-boys"
+      },
+      {
+        "id": 5,
+        "name": "anime-love"
+      }
     ],
-    "maxPage": 50,
+    "maxPage": 5,
     "maxThread": 5,
-    "restTime": 15
+    "restTime": 15,
+    "retry": 15,
+    "sleepMin": 10,
+    "sleepMax": 100
   },
   "news": {
     "url": "https://tinanime.com/api/genres/%s/news/?p=%s",
