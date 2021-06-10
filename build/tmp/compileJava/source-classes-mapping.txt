@@ -12,24 +12,24 @@ bot/news/NewDetail.java
  bot.news.NewDetail
 util/AppStorage.java
  util.AppStorage
-bot/news/NewBot.java
- bot.news.NewBot
+run/Main.java
+ run.Main
+ run.Main$Control
+ run.Main$Control$1
 bot/wallpaper/WallpaperItems.java
  bot.wallpaper.WallpaperItems
 model/config/ConfigApp.java
  model.config.ConfigApp
-model/config/ConfigWallpaper.java
- model.config.ConfigWallpaper
 util/AppUtil.java
  util.AppUtil
+bot/wallpaper/WallpaperBotDB.java
+ bot.wallpaper.WallpaperBotDB
 bot/BaseBotDB.java
  bot.BaseBotDB
-bot/news/NewBotDB.java
- bot.news.NewBotDB
+bot/news/NewBot.java
+ bot.news.NewBot
 bot/wallpaper/WallpaperInfo.java
  bot.wallpaper.WallpaperInfo
-bot/news/NewInfo.java
- bot.news.NewInfo
 util/AppData.java
  util.AppData
  util.AppData$Config
@@ -37,24 +37,24 @@ util/AppData.java
  util.AppData$Config$Output
  util.AppData$Database
  util.AppData$Database$MySQL
+bot/news/NewInfo.java
+ bot.news.NewInfo
 util/AppSql.java
  util.AppSql
  util.AppSql$Callback
 model/common/BaseModel.java
  model.common.BaseModel
-model/config/ConfigDatabaseTable.java
- model.config.ConfigDatabaseTable
+bot/wallpaper/WallpaperBot.java
+ bot.wallpaper.WallpaperBot
 model/config/ConfigDomain.java
  model.config.ConfigDomain
 bot/news/NewGenre.java
  bot.news.NewGenre
 model/config/ConfigQuery.java
  model.config.ConfigQuery
-bot/wallpaper/WallpaperBotDB.java
- bot.wallpaper.WallpaperBotDB
-bot/wallpaper/WallpaperBot.java
- bot.wallpaper.WallpaperBot
-run/Main.java
- run.Main
- run.Main$Control
- run.Main$Control$1
+bot/news/NewBotDB.java
+ bot.news.NewBotDB
+model/config/ConfigDatabaseTable.java
+ model.config.ConfigDatabaseTable
+model/config/ConfigWallpaper.java
+ model.config.ConfigWallpaper

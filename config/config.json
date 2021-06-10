@@ -36,11 +36,147 @@
       {
         "id": 5,
         "name": "anime-love"
-      }
+      },
+      {
+        "id": 6,
+        "name": "one-piece"
+      },
+      {
+        "id": 7,
+        "name": "dragon-ball"
+      },
+      {
+        "id": 8,
+        "name": "naruto"
+      },
+      {
+        "id": 9,
+        "name": "boku-no-hero"
+      },
+      {
+        "id": 10,
+        "name": "dr-stone"
+      },
+      {
+        "id": 11,
+        "name": "demon-slayer"
+      },
+      {
+        "id": 12,
+        "name": "boruto"
+      },
+      {
+        "id": 13,
+        "name": "fire-force"
+      },
+      {
+        "id": 14,
+        "name": "tokyo-ghoul"
+      },
+      {
+        "id": 15,
+        "name": "fairy-tail"
+      },
+      {
+        "id": 16,
+        "name": "nanatsu-no-taizai"
+      },
+      {
+        "id": 17,
+        "name": "black-clover"
+      },
+      {
+        "id": 18,
+        "name": "bleach"
+      },
+      {
+        "id": 19,
+        "name": "attack-on-titan"
+      },
+      {
+        "id": 20,
+        "name": "one-punch-man"
+      },
+      {
+        "id": 21,
+        "name": "kuroko-no-basket"
+      },
+      {
+        "id": 22,
+        "name": "gintama"
+      },
+      {
+        "id": 23,
+        "name": "overlord"
+      },
+      {
+        "id": 24,
+        "name": "sword-art-online"
+      },
+      {
+        "id": 25,
+        "name": "re-zero"
+      },
+      {
+        "id": 26,
+        "name": "no-game-no-life"
+      },
+      {
+        "id": 27,
+        "name": "konosuba"
+      },
+      {
+        "id": 28,
+        "name": "date-a-live"
+      },
+      {
+        "id": 29,
+        "name": "kakegurui"
+      },
+      {
+        "id": 30,
+        "name": "pokemon"
+      },
+      {
+        "id": 31,
+        "name": "durarara"
+      },
+      {
+        "id": 32,
+        "name": "monogatari"
+      },
+      {
+        "id": 33,
+        "name": "log-horizon"
+      },
+      {
+        "id": 34,
+        "name": "fate-stay-night"
+      },
+      {
+        "id": 35,
+        "name": "hight-school-dxd"
+      },
+      {
+        "id": 36,
+        "name": "to-love-ru"
+      },
+      {
+        "id": 37,
+        "name": "seraph-of-the-end"
+      },
+      {
+        "id": 38,
+        "name": "zero-two"
+      },
+      {
+        "id": 39,
+        "name": "mumei"
+      },
     ],
     "maxPage": 5,
     "maxThread": 5,
-    "restTime": 15,
+    "restTime": 1000,
     "retry": 15,
     "sleepMin": 10,
     "sleepMax": 100
@@ -71,7 +207,7 @@
     ],
     "maxPage": 5,
     "maxThread": 5,
-    "restTime": 15,
+    "restTime": 1000,
     "retry": 15,
     "sleepMin": 4000,
     "sleepMax": 8000
